@@ -305,7 +305,7 @@
       "title": "A bit of everything",
       "externalDocs": {
         "description": "Find out more about ABitOfEverything",
-        "url": "https://github.com/grpc-ecosystem/grpc-gateway"
+        "url": "https://github.com/ninnemana/grpc-gateway"
       },
       "required": [
         "uuid",

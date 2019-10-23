@@ -8,7 +8,7 @@ import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
 	empty "github.com/golang/protobuf/ptypes/empty"
-	sub "github.com/grpc-ecosystem/grpc-gateway/examples/proto/sub"
+	sub "github.com/ninnemana/grpc-gateway/examples/proto/sub"
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"

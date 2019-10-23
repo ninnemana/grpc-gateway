@@ -17,8 +17,8 @@ import (
 	structpb "github.com/golang/protobuf/ptypes/struct"
 	pbdescriptor "github.com/golang/protobuf/protoc-gen-go/descriptor"
 	gogen "github.com/golang/protobuf/protoc-gen-go/generator"
-	"github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway/descriptor"
-	swagger_options "github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger/options"
+	"github.com/ninnemana/grpc-gateway/protoc-gen-grpc-gateway/descriptor"
+	swagger_options "github.com/ninnemana/grpc-gateway/protoc-gen-swagger/options"
 )
 
 var wktSchemas = map[string]schemaCore{

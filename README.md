@@ -1,6 +1,6 @@
 # grpc-gateway
 
-[![release](https://img.shields.io/github/release/grpc-ecosystem/grpc-gateway.svg?style=flat-square)](https://github.com/grpc-ecosystem/grpc-gateway/releases) [![CircleCI](https://img.shields.io/circleci/project/github/grpc-ecosystem/grpc-gateway/master.svg?style=flat-square)](https://circleci.com/gh/grpc-ecosystem/grpc-gateway) [![fuzzit](https://app.fuzzit.dev/badge?org_id=grpc-gateway)](https://app.fuzzit.dev/orgs/grpc-gateway/dashboard) [![coverage](https://img.shields.io/codecov/c/github/grpc-ecosystem/grpc-gateway/master.svg?style=flat-square)](https://codecov.io/gh/grpc-ecosystem/grpc-gateway) [![license](https://img.shields.io/github/license/grpc-ecosystem/grpc-gateway.svg?style=flat-square)](LICENSE.txt)
+[![release](https://img.shields.io/github/release/ninnemana/grpc-gateway.svg?style=flat-square)](https://github.com/ninnemana/grpc-gateway/releases) [![CircleCI](https://img.shields.io/circleci/project/github/ninnemana/grpc-gateway/master.svg?style=flat-square)](https://circleci.com/gh/ninnemana/grpc-gateway) [![fuzzit](https://app.fuzzit.dev/badge?org_id=grpc-gateway)](https://app.fuzzit.dev/orgs/grpc-gateway/dashboard) [![coverage](https://img.shields.io/codecov/c/github/ninnemana/grpc-gateway/master.svg?style=flat-square)](https://codecov.io/gh/ninnemana/grpc-gateway) [![license](https://img.shields.io/github/license/ninnemana/grpc-gateway.svg?style=flat-square)](LICENSE.txt)
 
 The grpc-gateway is a plugin of the Google protocol buffers compiler
 [protoc](https://github.com/protocolbuffers/protobuf).
@@ -40,8 +40,8 @@ https://github.com/protocolbuffers/protobuf/releases
 Then use `go get -u` to download the following packages:
 
 ```sh
-go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
-go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger
+go get -u github.com/ninnemana/grpc-gateway/protoc-gen-grpc-gateway
+go get -u github.com/ninnemana/grpc-gateway/protoc-gen-swagger
 go get -u github.com/golang/protobuf/protoc-gen-go
 ```
 
@@ -107,7 +107,7 @@ annotation to your .proto file
    ```sh
    protoc -I/usr/local/include -I. \
      -I$GOPATH/src \
-     -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
+     -I$GOPATH/src/github.com/ninnemana/grpc-gateway/third_party/googleapis \
      --go_out=plugins=grpc:. \
      path/to/your_service.proto
    ```
@@ -122,13 +122,13 @@ annotation to your .proto file
      ```sh
      protoc -I/usr/local/include -I. \
        -I$GOPATH/src \
-       -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
+       -I$GOPATH/src/github.com/ninnemana/grpc-gateway/third_party/googleapis \
        --ruby_out=. \
        path/to/your_service.proto
 
      protoc -I/usr/local/include -I. \
        -I$GOPATH/src \
-       -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
+       -I$GOPATH/src/github.com/ninnemana/grpc-gateway/third_party/googleapis \
        --plugin=protoc-gen-grpc=grpc_ruby_plugin \
        --grpc-ruby_out=. \
        path/to/your_service.proto
@@ -141,7 +141,7 @@ annotation to your .proto file
    ```sh
    protoc -I/usr/local/include -I. \
      -I$GOPATH/src \
-     -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
+     -I$GOPATH/src/github.com/ninnemana/grpc-gateway/third_party/googleapis \
      --grpc-gateway_out=logtostderr=true:. \
      path/to/your_service.proto
    ```
@@ -159,7 +159,7 @@ annotation to your .proto file
      "net/http"
  
      "github.com/golang/glog"
-     "github.com/grpc-ecosystem/grpc-gateway/runtime"
+     "github.com/ninnemana/grpc-gateway/runtime"
      "google.golang.org/grpc"
  
      gw "path/to/your_service_package"  // Update
@@ -204,7 +204,7 @@ annotation to your .proto file
    ```sh
    protoc -I/usr/local/include -I. \
      -I$GOPATH/src \
-     -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
+     -I$GOPATH/src/github.com/ninnemana/grpc-gateway/third_party/googleapis \
      --swagger_out=logtostderr=true:. \
      path/to/your_service.proto
    ```
@@ -267,7 +267,7 @@ But patch is welcome.
 
 # Mapping gRPC to HTTP
 
-* [How gRPC error codes map to HTTP status codes in the response](https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/errors.go#L15).
+* [How gRPC error codes map to HTTP status codes in the response](https://github.com/ninnemana/grpc-gateway/blob/master/runtime/errors.go#L15).
 * HTTP request source IP is added as `X-Forwarded-For` gRPC request header.
 * HTTP request host is added as `X-Forwarded-Host` gRPC request header.
 * HTTP `Authorization` header is added as `authorization` gRPC request header.
@@ -282,8 +282,8 @@ header.
 `OrigName: true`.
 
 # Contribution
-See [CONTRIBUTING.md](http://github.com/grpc-ecosystem/grpc-gateway/blob/master/CONTRIBUTING.md).
+See [CONTRIBUTING.md](http://github.com/ninnemana/grpc-gateway/blob/master/CONTRIBUTING.md).
 
 # License
 grpc-gateway is licensed under the BSD 3-Clause License.
-See [LICENSE.txt](https://github.com/grpc-ecosystem/grpc-gateway/blob/master/LICENSE.txt) for more details.
+See [LICENSE.txt](https://github.com/ninnemana/grpc-gateway/blob/master/LICENSE.txt) for more details.

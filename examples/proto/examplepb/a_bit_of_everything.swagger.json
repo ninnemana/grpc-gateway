@@ -5,12 +5,12 @@
     "version": "1.0",
     "contact": {
       "name": "gRPC-Gateway project",
-      "url": "https://github.com/grpc-ecosystem/grpc-gateway",
+      "url": "https://github.com/ninnemana/grpc-gateway",
       "email": "none@example.com"
     },
     "license": {
       "name": "BSD 3-Clause License",
-      "url": "https://github.com/grpc-ecosystem/grpc-gateway/blob/master/LICENSE.txt"
+      "url": "https://github.com/ninnemana/grpc-gateway/blob/master/LICENSE.txt"
     },
     "x-something-something": "yadda"
   },
@@ -119,7 +119,7 @@
         ],
         "externalDocs": {
           "description": "Find out more Echo",
-          "url": "https://github.com/grpc-ecosystem/grpc-gateway"
+          "url": "https://github.com/ninnemana/grpc-gateway"
         }
       }
     },
@@ -1120,7 +1120,7 @@
         "security": [],
         "externalDocs": {
           "description": "Find out more about GetQuery",
-          "url": "https://github.com/grpc-ecosystem/grpc-gateway"
+          "url": "https://github.com/ninnemana/grpc-gateway"
         }
       }
     },
@@ -1868,7 +1868,7 @@
         ],
         "externalDocs": {
           "description": "Find out more Echo",
-          "url": "https://github.com/grpc-ecosystem/grpc-gateway"
+          "url": "https://github.com/ninnemana/grpc-gateway"
         }
       },
       "post": {
@@ -1920,7 +1920,7 @@
         ],
         "externalDocs": {
           "description": "Find out more Echo",
-          "url": "https://github.com/grpc-ecosystem/grpc-gateway"
+          "url": "https://github.com/ninnemana/grpc-gateway"
         }
       }
     },
@@ -2392,7 +2392,7 @@
       "title": "A bit of everything",
       "externalDocs": {
         "description": "Find out more about ABitOfEverything",
-        "url": "https://github.com/grpc-ecosystem/grpc-gateway"
+        "url": "https://github.com/ninnemana/grpc-gateway"
       },
       "required": [
         "uuid",
@@ -2631,7 +2631,7 @@
   ],
   "externalDocs": {
     "description": "More about gRPC-Gateway",
-    "url": "https://github.com/grpc-ecosystem/grpc-gateway"
+    "url": "https://github.com/ninnemana/grpc-gateway"
   },
   "x-grpc-gateway-baz-list": [
     "one",

@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/grpc-ecosystem/grpc-gateway/examples/clients/abe"
-	"github.com/grpc-ecosystem/grpc-gateway/examples/clients/echo"
-	"github.com/grpc-ecosystem/grpc-gateway/examples/clients/unannotatedecho"
+	"github.com/ninnemana/grpc-gateway/examples/clients/abe"
+	"github.com/ninnemana/grpc-gateway/examples/clients/echo"
+	"github.com/ninnemana/grpc-gateway/examples/clients/unannotatedecho"
 )
 
 func TestEchoClient(t *testing.T) {

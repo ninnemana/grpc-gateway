@@ -1,6 +1,6 @@
 # grpc-gateway
 
-[![CircleCI](https://circleci.com/gh/grpc-ecosystem/grpc-gateway.svg?style=svg)](https://circleci.com/gh/grpc-ecosystem/grpc-gateway)
+[![CircleCI](https://circleci.com/gh/ninnemana/grpc-gateway.svg?style=svg)](https://circleci.com/gh/ninnemana/grpc-gateway)
 
 grpc-gateway is a plugin of [protoc](http://github.com/google/protobuf).
 It reads [gRPC](http://github.com/grpc/grpc-common) service definition,
@@ -21,8 +21,8 @@ To learn more about us check out our documentation on:
 
 
 # Contribution
-See [CONTRIBUTING.md](http://github.com/grpc-ecosystem/grpc-gateway/blob/master/CONTRIBUTING.md).
+See [CONTRIBUTING.md](http://github.com/ninnemana/grpc-gateway/blob/master/CONTRIBUTING.md).
 
 # License
 grpc-gateway is licensed under the BSD 3-Clause License.
-See [LICENSE.txt](https://github.com/grpc-ecosystem/grpc-gateway/blob/master/LICENSE.txt) for more details.
+See [LICENSE.txt](https://github.com/ninnemana/grpc-gateway/blob/master/LICENSE.txt) for more details.
