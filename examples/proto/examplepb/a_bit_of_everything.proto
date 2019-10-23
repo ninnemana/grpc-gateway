@@ -18,12 +18,12 @@ option (grpc.gateway.protoc_gen_swagger.options.openapiv2_swagger) = {
 		version: "1.0";
 		contact: {
 			name: "gRPC-Gateway project";
-			url: "https://github.com/grpc-ecosystem/grpc-gateway";
+			url: "https://github.com/ninnemana/grpc-gateway";
 			email: "none@example.com";
 		};
 		license: {
 			name: "BSD 3-Clause License";
-			url: "https://github.com/grpc-ecosystem/grpc-gateway/blob/master/LICENSE.txt";
+			url: "https://github.com/ninnemana/grpc-gateway/blob/master/LICENSE.txt";
 		};
 		extensions: {
 			key: "x-something-something";
@@ -34,7 +34,7 @@ option (grpc.gateway.protoc_gen_swagger.options.openapiv2_swagger) = {
 	};
 	// Overwriting host entry breaks tests, so this is not done here.
 	external_docs: {
-		url: "https://github.com/grpc-ecosystem/grpc-gateway";
+		url: "https://github.com/ninnemana/grpc-gateway";
 		description: "More about gRPC-Gateway";
 	}
 	schemes: HTTP;
@@ -190,7 +190,7 @@ message ABitOfEverything {
 			required: ["uuid", "int64_value", "double_value"]
 		}
 		external_docs: {
-			url: "https://github.com/grpc-ecosystem/grpc-gateway";
+			url: "https://github.com/ninnemana/grpc-gateway";
 			description: "Find out more about ABitOfEverything";
 		}
 		example: { value: '{ "uuid": "0cf361e1-4b44-483d-a159-54dabdf7e814" }' }
@@ -328,7 +328,7 @@ service ABitOfEverythingService {
 	option (grpc.gateway.protoc_gen_swagger.options.openapiv2_tag) = {
 		description: "ABitOfEverythingService description -- which should not be used in place of the documentation comment!"
 		external_docs: {
-			url: "https://github.com/grpc-ecosystem/grpc-gateway";
+			url: "https://github.com/ninnemana/grpc-gateway";
 			description: "Find out more about EchoService";
 		}
 	};
@@ -408,7 +408,7 @@ service ABitOfEverythingService {
 		option (grpc.gateway.protoc_gen_swagger.options.openapiv2_operation) = {
 			deprecated: true // For testing purposes.
 			external_docs: {
-				url: "https://github.com/grpc-ecosystem/grpc-gateway";
+				url: "https://github.com/ninnemana/grpc-gateway";
 				description: "Find out more about GetQuery";
 			}
 			security: {
@@ -443,7 +443,7 @@ service ABitOfEverythingService {
 			summary: "Summary: Echo rpc";
 			tags: "echo rpc";
 			external_docs: {
-				url: "https://github.com/grpc-ecosystem/grpc-gateway";
+				url: "https://github.com/ninnemana/grpc-gateway";
 				description: "Find out more Echo";
 			}
 			responses: {

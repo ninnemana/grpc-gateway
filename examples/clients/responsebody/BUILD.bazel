@@ -14,7 +14,7 @@ go_library(
         "model_response_response_type.go",
         "response.go",
     ],
-    importpath = "github.com/grpc-ecosystem/grpc-gateway/examples/clients/responsebody",
+    importpath = "github.com/ninnemana/grpc-gateway/examples/clients/responsebody",
     visibility = ["//visibility:public"],
     deps = ["@org_golang_x_oauth2//:go_default_library"],
 )
