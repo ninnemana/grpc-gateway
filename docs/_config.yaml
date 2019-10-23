@@ -1,6 +1,6 @@
 theme: jekyll-theme-architect
 
-repository: grpc-ecosystem/grpc-gateway
+repository: ninnemana/grpc-gateway
 
 collections:
   docs:
