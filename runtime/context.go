@@ -11,8 +11,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/opentracing/opentracing-go"
-	"github.com/opentracing/opentracing-go/ext"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/grpclog"
 	"google.golang.org/grpc/metadata"
@@ -85,20 +83,20 @@ func AnnotateIncomingContext(ctx context.Context, mux *ServeMux, req *http.Reque
 }
 
 func annotateContext(ctx context.Context, mux *ServeMux, req *http.Request) (context.Context, metadata.MD, error) {
-	wireContext, err := opentracing.GlobalTracer().Extract(
-		opentracing.HTTPHeaders,
-		opentracing.HTTPHeadersCarrier(req.Header))
-	if err != nil {
-		return nil, nil, status.Errorf(codes.InvalidArgument, "invalid HTTP request parameters: %s", err)
-	}
+	//wireContext, err := opentracing.GlobalTracer().Extract(
+	//	opentracing.HTTPHeaders,
+	//	opentracing.HTTPHeadersCarrier(req.Header))
+	//if err != nil {
+	//	return nil, nil, status.Errorf(codes.InvalidArgument, "invalid HTTP request parameters: %s", err)
+	//}
 
-	serverSpan := opentracing.StartSpan(
-		req.URL.Path,
-		ext.RPCServerOption(wireContext))
+	//serverSpan := opentracing.StartSpan(
+	//	req.URL.Path,
+	//	ext.RPCServerOption(wireContext))
 
-	defer serverSpan.Finish()
+	//defer serverSpan.Finish()
 
-	ctx = opentracing.ContextWithSpan(ctx, serverSpan)
+	//ctx = opentracing.ContextWithSpan(ctx, serverSpan)
 
 	var pairs []string
 	timeout := DefaultContextTimeout
